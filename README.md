@@ -10,5 +10,5 @@ https://www.shadowserver.org
 
 ## Install
 ```
-$ pip install bit9-api
+$ pip install shadow-server-api
 ```
