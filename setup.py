@@ -7,7 +7,7 @@ except:
 setup(
     name='shadow-server-api',
     test_suite="tests",
-    version='1',
+    version='1.0.0',
     packages=['shadowserver', 'shadowserver.test'],
     url='https://github.com/blacktop/shadow-server-api',
     license='GPLv3',

@@ -52,7 +52,7 @@ class ShadowServerApi():
                 "sig_trustfile": "C:\\WINDOWS\\system32\\CatRoot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\\NT5.CAT",
                 "filesize": "69120",
                 "sha256": "865F34FE7BA81E9622DDBDFC511547D190367BBF3DAD21CEB6DA3EEC621044F5",
-                "sha512": "CB7218CFEA8813AE8C7ACF6F7511AECBEB9D697986E0EB8538065BF9E3E9C6CED9C29270EB677F5ACF08D2E94B21018D8C4A376AA646FA73CE831FC87D448934",
+                "sha512": "CB7218CFEA8813AE8C7ACF6F7511AECBEB9D697986E0EB8538065BF9E3E9C6CED9C2927...<snip>",
                 "product_name": "Microsoft Windows Operating System",
                 "os_name": "Microsoft Windows XP Professional Service Pack 3 (build 2600)",
                 "description": "Notepad",
@@ -74,7 +74,7 @@ class ShadowServerApi():
         }
         """
         #: Validate Input
-        hash_check = re.findall('([0-9a-fA-F]{40}|[0-9a-fA-F]{32})', this_hash)
+        hash_check = re.findall(r'(?i)(?<![a-zA-Z0-9])[a-fA-F0-9]{32}(?![a-zA-Z0-9])', this_hash)
         if len(this_hash) == 32 and len(hash_check) == 1:
             params = {'md5': this_hash}
         elif len(this_hash) == 40 and len(hash_check) == 1:
@@ -163,7 +163,7 @@ class ShadowServerApi():
 
         """
         #: Validate Input
-        hash_check = re.findall('([0-9a-fA-F]{40}|[0-9a-fA-F]{32})', this_hash)
+        hash_check = re.findall(r'(?i)(?<![a-zA-Z0-9])[a-fA-F0-9]{32}(?![a-zA-Z0-9])', this_hash)
         if len(this_hash) == 32 or len(this_hash) == 40 and len(hash_check) == 1:
             params = {'query': this_hash}
         else:
@@ -243,20 +243,20 @@ class ShadowServerApi():
     #   - E-Mail address for contact
     #   - Company
 
-    # TODO : Impliment download_sample
+    # TODO : Implement download_sample
     def download_sample(self, this_md5):
         params = {'download': this_md5}
         response = requests.get(self.shadowserver_av, params=params)
         if response.status_code == requests.codes.ok:
             pass
 
-    # TODO : Impliment get_av_results_from_hash
+    # TODO : Implement get_av_results_from_hash
     def get_av_results_from_hash(self, this_md5):
         params = {'avresult': this_md5}
         response = requests.get(self.shadowserver_av, params=params)
         if response.status_code == requests.codes.ok:
             pass
-    # TODO : Impliment get_ssdeep_matches
+    # TODO : Implement get_ssdeep_matches
     def get_ssdeep_matches(self, this_ssdeep):
         params = {'ssdeep': this_ssdeep}
         response = requests.get(self.shadowserver_av, params=params)
