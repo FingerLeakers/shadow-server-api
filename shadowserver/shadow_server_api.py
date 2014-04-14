@@ -80,7 +80,7 @@ class ShadowServerApi():
         elif len(this_hash) == 40 and len(hash_check) == 1:
             params = {'sha1': this_hash}
         else:
-            return dict(error='Malformed Input: needs to be a single md5 or sha1 hash.')
+            return dict(error='Malformed Input: needs to be a single md5 or sha1 hash.', response_code=400)
 
         try:
             response = requests.get(self.shadowserver_bintest, params=params)
@@ -167,7 +167,7 @@ class ShadowServerApi():
         if len(this_hash) == 32 or len(this_hash) == 40 and len(hash_check) == 1:
             params = {'query': this_hash}
         else:
-            return dict(error='Malformed Input: needs to be a single md5 or sha1 hash.')
+            return dict(error='Malformed Input: needs to be a single md5 or sha1 hash.', response_code=400)
 
         try:
             response = requests.get(self.shadowserver_av, params=params)

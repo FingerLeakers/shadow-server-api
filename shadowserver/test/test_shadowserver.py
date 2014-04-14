@@ -46,6 +46,15 @@ class InitTests(TestCase):
         except Exception as e:
             self.fail(e)
 
+    def test_get_av_bad_input(self):
+        myteam = ShadowServerApi()
+
+        try:
+            print 'Get AV Results for {}'.format('Not a hash')
+            print json.dumps(myteam.get_av('Not a hash'), sort_keys=False, indent=4)
+        except Exception as e:
+            self.fail(e)
+
     def test_get_bintest_not_found(self):
         myteam = ShadowServerApi()
 
@@ -61,5 +70,14 @@ class InitTests(TestCase):
         try:
             print 'Get Binary Whitelist Test Results for {}'.format('5e28284f9b5f9097640d58a73d38ad4c')
             print json.dumps(myteam.get_bintest('5e28284f9b5f9097640d58a73d38ad4c'), sort_keys=False, indent=4)
+        except Exception as e:
+            self.fail(e)
+
+    def test_get_bintest_bad_input(self):
+        myteam = ShadowServerApi()
+
+        try:
+            print 'Get Binary Whitelist Test Results for {}'.format('Not a hash')
+            print json.dumps(myteam.get_bintest('Not a hash'), sort_keys=False, indent=4)
         except Exception as e:
             self.fail(e)
