@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 __author__ = 'Josh Maine'
-__version__ = '1'
+__version__ = '1.0.1'
 __license__ = 'GPLv3'
 
 import json
@@ -32,7 +32,7 @@ class InitTests(TestCase):
         myteam = ShadowServerApi()
 
         try:
-            print 'Get AV Results for NOT FOUND {}'.format('039ea049f6d0f36f55ec064b3b371c46')
+            print 'Get AV Results for FOUND {}'.format('039ea049f6d0f36f55ec064b3b371c46')
             print json.dumps(myteam.get_av('039ea049f6d0f36f55ec064b3b371c46'), sort_keys=False, indent=4)
         except Exception as e:
             self.fail(e)

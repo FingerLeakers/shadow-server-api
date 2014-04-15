@@ -7,12 +7,12 @@ except:
 setup(
     name='shadow-server-api',
     test_suite="tests",
-    version='1.0.0',
+    version='1.0.1',
     packages=['shadowserver', 'shadowserver.test'],
     url='https://github.com/blacktop/shadow-server-api',
     license='GPLv3',
     author='blacktop',
-    author_email='',
+    author_email='dev@blacktop.io',
     description='Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API',
     install_requires=[
         "requests >= 2.2.1",
