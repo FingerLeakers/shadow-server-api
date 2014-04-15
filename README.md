@@ -16,7 +16,7 @@ Installation
 
 Usage
 -----
-### MD5/SHA1 AV Service
+#### MD5/SHA1 AV Service
 ```python
 import json
 from shadowserver.shadow_server_api import ShadowServerApi
@@ -27,7 +27,7 @@ response =  ss.get_av('039ea049f6d0f36f55ec064b3b371c46')
 print json.dumps(response, sort_keys=False, indent=4)
 ```
 
-### Output:
+#### Output:
 ```json
 {
     "sha1": "ada0f47d8a52d664a5548bf67aa4a28c1d7dbf15",
@@ -63,7 +63,7 @@ print json.dumps(response, sort_keys=False, indent=4)
 }
 ```
 
-### Binary Whitelist
+#### Binary Whitelist
 ```python
 import json
 from shadowserver.shadow_server_api import ShadowServerApi
@@ -74,7 +74,7 @@ response =  ss.get_bintest('5e28284f9b5f9097640d58a73d38ad4c')
 print json.dumps(response, sort_keys=False, indent=4)
 ```
 
-### Output:
+#### Output:
 ```json
 {
     "response_code": 200,
