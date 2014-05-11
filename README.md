@@ -2,7 +2,7 @@
 
 shadow-server-api
 =================
-[![PyPI version](https://badge.fury.io/py/shadow-server-api.svg)](http://badge.fury.io/py/shadow-server-api) [![Build Status](https://travis-ci.org/blacktop/shadow-server-api.svg?branch=master)](https://travis-ci.org/blacktop/shadow-server-api) [![Downloads](https://pypip.in/download/shadow-server-api/badge.png)](https://pypi.python.org/pypi/shadow-server-api/)
+[![PyPI version](https://badge.fury.io/py/shadow-server-api.svg)](http://badge.fury.io/py/shadow-server-api) [![Build Status](https://travis-ci.org/blacktop/shadow-server-api.svg?branch=master)](https://travis-ci.org/blacktop/shadow-server-api) [![Downloads](https://pypip.in/download/shadow-server-api/badge.png)](https://pypi.python.org/pypi/shadow-server-api/) [![Support blacktop via Gittip](http://img.shields.io/gittip/blacktop.svg)](https://www.gittip.com/blacktop/)
 
 Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API
 
