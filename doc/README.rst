@@ -2,18 +2,7 @@
 
 shadow-server-api
 *****************
-
-.. |travisci| image:: https://travis-ci.org/blacktop/shadow-server-api.svg?branch=master
-    :target: https://travis-ci.org/blacktop/shadow-server-api
-
-.. |version| image:: https://badge.fury.io/py/shadow-server-api.png
-    :target: http://badge.fury.io/py/shadow-server-api
-
-.. |downloads| image:: https://pypip.in/d/shadow-server-api/badge.png
-        :target: https://crate.io/shadow-server-api/requests/
-
-.. |tip| image:: http://img.shields.io/gittip/blacktop.svg
-        :target: https://www.gittip.com/blacktop/
+|travisci| |version| |downloads| |tip|
 
 Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API
 
@@ -149,3 +138,13 @@ Contributing
 4. Push to the branch (`git push origin my_shadow_server_api`)
 5. Open a [Pull Request](https://github.com/blacktop/shadow-server-api/pulls)
 6. Wait for me to figure out what the heck a pull request is...
+
+
+.. |travisci| image:: https://travis-ci.org/blacktop/shadow-server-api.svg?branch=master
+    :target: https://travis-ci.org/blacktop/shadow-server-api
+.. |version| image:: https://badge.fury.io/py/shadow-server-api.png
+    :target: http://badge.fury.io/py/shadow-server-api
+.. |downloads| image:: https://pypip.in/d/shadow-server-api/badge.png
+        :target: https://crate.io/shadow-server-api/requests/
+.. |tip| image:: http://img.shields.io/gittip/blacktop.svg
+        :target: https://www.gittip.com/blacktop/
