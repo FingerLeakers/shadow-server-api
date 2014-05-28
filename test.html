@@ -1,0 +1,497 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Docutils 0.11: http://docutils.sourceforge.net/" />
+<title></title>
+<style type="text/css">
+
+/*
+:Author: David Goodger (goodger@python.org)
+:Id: $Id: html4css1.css 7614 2013-02-21 15:55:51Z milde $
+:Copyright: This stylesheet has been placed in the public domain.
+
+Default cascading style sheet for the HTML output of Docutils.
+
+See http://docutils.sf.net/docs/howto/html-stylesheets.html for how to
+customize this style sheet.
+*/
+
+/* used to remove borders from tables and images */
+.borderless, table.borderless td, table.borderless th {
+  border: 0 }
+
+table.borderless td, table.borderless th {
+  /* Override padding for "table.docutils td" with "! important".
+     The right padding separates the table cells. */
+  padding: 0 0.5em 0 0 ! important }
+
+.first {
+  /* Override more specific margin styles with "! important". */
+  margin-top: 0 ! important }
+
+.last, .with-subtitle {
+  margin-bottom: 0 ! important }
+
+.hidden {
+  display: none }
+
+a.toc-backref {
+  text-decoration: none ;
+  color: black }
+
+blockquote.epigraph {
+  margin: 2em 5em ; }
+
+dl.docutils dd {
+  margin-bottom: 0.5em }
+
+object[type="image/svg+xml"], object[type="application/x-shockwave-flash"] {
+  overflow: hidden;
+}
+
+/* Uncomment (and remove this text!) to get bold-faced definition list terms
+dl.docutils dt {
+  font-weight: bold }
+*/
+
+div.abstract {
+  margin: 2em 5em }
+
+div.abstract p.topic-title {
+  font-weight: bold ;
+  text-align: center }
+
+div.admonition, div.attention, div.caution, div.danger, div.error,
+div.hint, div.important, div.note, div.tip, div.warning {
+  margin: 2em ;
+  border: medium outset ;
+  padding: 1em }
+
+div.admonition p.admonition-title, div.hint p.admonition-title,
+div.important p.admonition-title, div.note p.admonition-title,
+div.tip p.admonition-title {
+  font-weight: bold ;
+  font-family: sans-serif }
+
+div.attention p.admonition-title, div.caution p.admonition-title,
+div.danger p.admonition-title, div.error p.admonition-title,
+div.warning p.admonition-title, .code .error {
+  color: red ;
+  font-weight: bold ;
+  font-family: sans-serif }
+
+/* Uncomment (and remove this text!) to get reduced vertical space in
+   compound paragraphs.
+div.compound .compound-first, div.compound .compound-middle {
+  margin-bottom: 0.5em }
+
+div.compound .compound-last, div.compound .compound-middle {
+  margin-top: 0.5em }
+*/
+
+div.dedication {
+  margin: 2em 5em ;
+  text-align: center ;
+  font-style: italic }
+
+div.dedication p.topic-title {
+  font-weight: bold ;
+  font-style: normal }
+
+div.figure {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+div.footer, div.header {
+  clear: both;
+  font-size: smaller }
+
+div.line-block {
+  display: block ;
+  margin-top: 1em ;
+  margin-bottom: 1em }
+
+div.line-block div.line-block {
+  margin-top: 0 ;
+  margin-bottom: 0 ;
+  margin-left: 1.5em }
+
+div.sidebar {
+  margin: 0 0 0.5em 1em ;
+  border: medium outset ;
+  padding: 1em ;
+  background-color: #ffffee ;
+  width: 40% ;
+  float: right ;
+  clear: right }
+
+div.sidebar p.rubric {
+  font-family: sans-serif ;
+  font-size: medium }
+
+div.system-messages {
+  margin: 5em }
+
+div.system-messages h1 {
+  color: red }
+
+div.system-message {
+  border: medium outset ;
+  padding: 1em }
+
+div.system-message p.system-message-title {
+  color: red ;
+  font-weight: bold }
+
+div.topic {
+  margin: 2em }
+
+h1.section-subtitle, h2.section-subtitle, h3.section-subtitle,
+h4.section-subtitle, h5.section-subtitle, h6.section-subtitle {
+  margin-top: 0.4em }
+
+h1.title {
+  text-align: center }
+
+h2.subtitle {
+  text-align: center }
+
+hr.docutils {
+  width: 75% }
+
+img.align-left, .figure.align-left, object.align-left {
+  clear: left ;
+  float: left ;
+  margin-right: 1em }
+
+img.align-right, .figure.align-right, object.align-right {
+  clear: right ;
+  float: right ;
+  margin-left: 1em }
+
+img.align-center, .figure.align-center, object.align-center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.align-left {
+  text-align: left }
+
+.align-center {
+  clear: both ;
+  text-align: center }
+
+.align-right {
+  text-align: right }
+
+/* reset inner alignment in figures */
+div.align-right {
+  text-align: inherit }
+
+/* div.align-center * { */
+/*   text-align: left } */
+
+ol.simple, ul.simple {
+  margin-bottom: 1em }
+
+ol.arabic {
+  list-style: decimal }
+
+ol.loweralpha {
+  list-style: lower-alpha }
+
+ol.upperalpha {
+  list-style: upper-alpha }
+
+ol.lowerroman {
+  list-style: lower-roman }
+
+ol.upperroman {
+  list-style: upper-roman }
+
+p.attribution {
+  text-align: right ;
+  margin-left: 50% }
+
+p.caption {
+  font-style: italic }
+
+p.credits {
+  font-style: italic ;
+  font-size: smaller }
+
+p.label {
+  white-space: nowrap }
+
+p.rubric {
+  font-weight: bold ;
+  font-size: larger ;
+  color: maroon ;
+  text-align: center }
+
+p.sidebar-title {
+  font-family: sans-serif ;
+  font-weight: bold ;
+  font-size: larger }
+
+p.sidebar-subtitle {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+p.topic-title {
+  font-weight: bold }
+
+pre.address {
+  margin-bottom: 0 ;
+  margin-top: 0 ;
+  font: inherit }
+
+pre.literal-block, pre.doctest-block, pre.math, pre.code {
+  margin-left: 2em ;
+  margin-right: 2em }
+
+pre.code .ln { color: grey; } /* line numbers */
+pre.code, code { background-color: #eeeeee }
+pre.code .comment, code .comment { color: #5C6576 }
+pre.code .keyword, code .keyword { color: #3B0D06; font-weight: bold }
+pre.code .literal.string, code .literal.string { color: #0C5404 }
+pre.code .name.builtin, code .name.builtin { color: #352B84 }
+pre.code .deleted, code .deleted { background-color: #DEB0A1}
+pre.code .inserted, code .inserted { background-color: #A3D289}
+
+span.classifier {
+  font-family: sans-serif ;
+  font-style: oblique }
+
+span.classifier-delimiter {
+  font-family: sans-serif ;
+  font-weight: bold }
+
+span.interpreted {
+  font-family: sans-serif }
+
+span.option {
+  white-space: nowrap }
+
+span.pre {
+  white-space: pre }
+
+span.problematic {
+  color: red }
+
+span.section-subtitle {
+  /* font-size relative to parent (h1..h6 element) */
+  font-size: 80% }
+
+table.citation {
+  border-left: solid 1px gray;
+  margin-left: 1px }
+
+table.docinfo {
+  margin: 2em 4em }
+
+table.docutils {
+  margin-top: 0.5em ;
+  margin-bottom: 0.5em }
+
+table.footnote {
+  border-left: solid 1px black;
+  margin-left: 1px }
+
+table.docutils td, table.docutils th,
+table.docinfo td, table.docinfo th {
+  padding-left: 0.5em ;
+  padding-right: 0.5em ;
+  vertical-align: top }
+
+table.docutils th.field-name, table.docinfo th.docinfo-name {
+  font-weight: bold ;
+  text-align: left ;
+  white-space: nowrap ;
+  padding-left: 0 }
+
+/* "booktabs" style (no vertical lines) */
+table.docutils.booktabs {
+  border: 0px;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  border-collapse: collapse;
+}
+table.docutils.booktabs * {
+  border: 0px;
+}
+table.docutils.booktabs th {
+  border-bottom: thin solid;
+  text-align: left;
+}
+
+h1 tt.docutils, h2 tt.docutils, h3 tt.docutils,
+h4 tt.docutils, h5 tt.docutils, h6 tt.docutils {
+  font-size: 100% }
+
+ul.auto-toc {
+  list-style-type: none }
+
+</style>
+</head>
+<body>
+<div class="document">
+
+
+<img alt="https://raw.githubusercontent.com/blacktop/shadow-server-api/master/doc/logo.png" src="https://raw.githubusercontent.com/blacktop/shadow-server-api/master/doc/logo.png" />
+<div class="section" id="shadow-server-api">
+<h1>shadow-server-api</h1>
+<p>Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API</p>
+<p><a class="reference external" href="https://www.shadowserver.org">https://www.shadowserver.org</a></p>
+<div class="section" id="installation">
+<h2>Installation</h2>
+<pre class="code bash literal-block">
+<span class="name variable">$ </span>pip install shadow-server-api
+</pre>
+</div>
+<div class="section" id="usage">
+<h2>Usage</h2>
+<div class="section" id="md5-sha1-av-service">
+<h3>MD5/SHA1 AV Service</h3>
+<pre class="code python literal-block">
+<span class="keyword namespace">import</span> <span class="name namespace">json</span>
+<span class="keyword namespace">from</span> <span class="name namespace">shadowserver.shadow_server_api</span> <span class="keyword namespace">import</span> <span class="name">ShadowServerApi</span>
+
+<span class="name">ss</span> <span class="operator">=</span> <span class="name">ShadowServerApi</span><span class="punctuation">()</span>
+
+<span class="name">response</span> <span class="operator">=</span>  <span class="name">ss</span><span class="operator">.</span><span class="name">get_av</span><span class="punctuation">(</span><span class="literal string">'039ea049f6d0f36f55ec064b3b371c46'</span><span class="punctuation">)</span>
+<span class="keyword">print</span> <span class="name">json</span><span class="operator">.</span><span class="name">dumps</span><span class="punctuation">(</span><span class="name">response</span><span class="punctuation">,</span> <span class="name">sort_keys</span><span class="operator">=</span><span class="name builtin pseudo">False</span><span class="punctuation">,</span> <span class="name">indent</span><span class="operator">=</span><span class="literal number integer">4</span><span class="punctuation">)</span>
+</pre>
+</div>
+<div class="section" id="output">
+<h3>Output:</h3>
+<pre class="code json literal-block">
+<span class="punctuation">{</span>
+    <span class="name tag">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;ada0f47d8a52d664a5548bf67aa4a28c1d7dbf15&quot;</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;last_seen_date_utc&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;2013-12-12 15:11:38&quot;</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;file_type&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;exe&quot;</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;response_code&quot;</span><span class="punctuation">:</span> <span class="literal number integer">200</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;av&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+        <span class="name tag">&quot;DrWeb&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;BackDoor.Kuluoz.4&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;FSecure&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Suspicious:W32/Malware!Online&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Clam&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;PUA.Win32.Packer.Upx-53&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Symantec&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan.Fakeavlock&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;TrendMicro&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;TROJ_SPNR.11LC13&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Avast&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Win32:Malware-gen&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;GData&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan.GenericKD.1449455&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Kaspersky&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan-Downloader.Win32.Dofoil.rmy&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;BitDefender&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan.GenericKD.1449455&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;McAfee&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;RDN/Downloader.a!og&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Eset&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Win32/Kryptik.BQYU&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Avira&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;TR/Crypt.ZPACK.Gen8&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Sunbelt&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan.Win32.Dofoil.qtz&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;K7&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan ( 004912141 )&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Fortinet&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;W32/DOFOIL.LF!tr&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Microsoft&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;TrojanDownloader:Win32/Kuluoz.D&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;AVG&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Generic_r.DHD&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;K7GW&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan ( 004912141 )&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Emsisoft&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Trojan.GenericKD.1449455&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;QuickHeal&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;TrojanDownloader.Kuluoz.aob&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;Comodo&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;UnclassifiedMalware&quot;</span>
+    <span class="punctuation">},</span>
+    <span class="name tag">&quot;ssdeep&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;&quot;</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;first_seen_date_utc&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;2013-12-12 15:11:38&quot;</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;md5&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;039ea049f6d0f36f55ec064b3b371c46&quot;</span>
+<span class="punctuation">}</span>
+</pre>
+</div>
+</div>
+<div class="section" id="binary-whitelist">
+<h2>Binary Whitelist</h2>
+<pre class="code python literal-block">
+<span class="keyword namespace">import</span> <span class="name namespace">json</span>
+<span class="keyword namespace">from</span> <span class="name namespace">shadowserver.shadow_server_api</span> <span class="keyword namespace">import</span> <span class="name">ShadowServerApi</span>
+
+<span class="name">ss</span> <span class="operator">=</span> <span class="name">ShadowServerApi</span><span class="punctuation">()</span>
+
+<span class="name">response</span> <span class="operator">=</span>  <span class="name">ss</span><span class="operator">.</span><span class="name">get_bintest</span><span class="punctuation">(</span><span class="literal string">'5e28284f9b5f9097640d58a73d38ad4c'</span><span class="punctuation">)</span>
+<span class="keyword">print</span> <span class="name">json</span><span class="operator">.</span><span class="name">dumps</span><span class="punctuation">(</span><span class="name">response</span><span class="punctuation">,</span> <span class="name">sort_keys</span><span class="operator">=</span><span class="name builtin pseudo">False</span><span class="punctuation">,</span> <span class="name">indent</span><span class="operator">=</span><span class="literal number integer">4</span><span class="punctuation">)</span>
+</pre>
+<div class="section" id="id1">
+<h3>Output:</h3>
+<pre class="code json literal-block">
+<span class="punctuation">{</span>
+    <span class="name tag">&quot;response_code&quot;</span><span class="punctuation">:</span> <span class="literal number integer">200</span><span class="punctuation">,</span>
+    <span class="name tag">&quot;results&quot;</span><span class="punctuation">:</span> <span class="punctuation">{</span>
+        <span class="name tag">&quot;os_mfg&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Microsoft Corporation&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;fileversion&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;5.1.2600.5512&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;reference&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;os_patches_all&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;application_type&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;exe&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;filetimestamp&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;04/14/2008 12:00:00&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;sig_timestamp&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;04/14/2008 02:07:47&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;language_code&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1033&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;source_version&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1.6&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;dirname&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;c:\\WINDOWS\\system32&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;binary&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;source&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;AppInfo&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;product_version&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;5.1.2600.5512&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;mfg_name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Microsoft Corporation&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;filename&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;notepad.exe&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;os_version&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;5.1&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;sig_trustfile&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;C:\\WINDOWS\\system32\\CatRoot\\{F750E6C3-38EE-11D1-85E5-00C04FC295EE}\\NT5.CAT&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;filesize&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;69120&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;sha256&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;865F34FE7BA81E9622DDBDFC511547D190367BBF3DAD21CEB6DA3EEC621044F5&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;sha512&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;CB7218CFEA8813AE8C7ACF6F7511AECBEB9D697986E0EB8538065BF9E3E9C6CED9C29270EB677F5ACF08D2E94B21018D8C4A376AA646FA73CE831FC87D448934&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;product_name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Microsoft Windows Operating System&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;os_name&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Microsoft Windows XP Professional Service Pack 3 (build 2600)&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;description&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Notepad&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;trusted_signature&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;1&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;crc32&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;877EA041&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;bit&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;32&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;md5&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;5E28284F9B5F9097640D58A73D38AD4C&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;sha1&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;7A90F8B051BC82CC9CADBCC9BA345CED02891A6C&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;language&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;English&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;signer&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;Microsoft Windows Component Publisher&quot;</span><span class="punctuation">,</span>
+        <span class="name tag">&quot;strongname_signed&quot;</span><span class="punctuation">:</span> <span class="literal string double">&quot;0&quot;</span>
+    <span class="punctuation">}</span>
+<span class="punctuation">}</span>
+</pre>
+</div>
+<div class="section" id="testing">
+<h3>Testing</h3>
+<p>To run the tests:</p>
+<blockquote>
+$ ./tests</blockquote>
+</div>
+<div class="section" id="contributing">
+<h3>Contributing</h3>
+<ol class="arabic simple">
+<li>Fork it.</li>
+<li>Create a branch (<cite>git checkout -b my_shadow_server_api</cite>)</li>
+<li>Commit your changes (<cite>git commit -am &quot;Added Something Cool&quot;</cite>)</li>
+<li>Push to the branch (<cite>git push origin my_shadow_server_api</cite>)</li>
+<li>Open a [Pull Request](<a class="reference external" href="https://github.com/blacktop/shadow-server-api/pulls">https://github.com/blacktop/shadow-server-api/pulls</a>)</li>
+<li>Wait for me to figure out what the heck a pull request is...</li>
+</ol>
+<!-- :changelog: -->
+</div>
+<div class="section" id="release-history">
+<h3>Release History</h3>
+</div>
+<div class="section" id="id2">
+<h3>1.0.2 (2014-05-18)</h3>
+<p><strong>API Changes</strong></p>
+<ul class="simple">
+<li>Changing folder structure so when people import it it is not dumb :(</li>
+</ul>
+</div>
+<div class="section" id="id3">
+<h3>1.0.1 (2014-04-14)</h3>
+<p><strong>Bugfixes</strong></p>
+<ul class="simple">
+<li>Trying to fix setup.py for deploying to PYPI.</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
