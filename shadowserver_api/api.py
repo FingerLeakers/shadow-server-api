@@ -4,10 +4,14 @@ __author__ = 'Josh Maine'
 __version__ = '1.0.1'
 __license__ = 'GPLv3'
 
-import re
 import ast
 import json
-import requests
+import re
+
+try:
+    import requests
+except ImportError:
+    pass
 
 
 class ShadowServerApi():
