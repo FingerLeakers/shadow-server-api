@@ -6,7 +6,7 @@ __license__ = 'GPLv3'
 
 import json
 from unittest import TestCase
-from shadow_server_api import ShadowServerApi
+from shadowserver_api import ShadowServerApi
 
 
 class InitTests(TestCase):
