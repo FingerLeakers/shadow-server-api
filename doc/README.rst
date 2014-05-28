@@ -126,6 +126,7 @@ Testing
 -------
 
 To run the tests:
+.. code-block:: bash
 
     $ ./tests
 
