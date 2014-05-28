@@ -17,8 +17,8 @@ Installation
 
 Usage
 =====
-MD5/SHA1 AV Service
--------------------
+**MD5/SHA1 AV Service**
+-----------------------
 .. code-block:: python
 
     import json
@@ -68,8 +68,8 @@ Output:
     }
 
 
-Binary Whitelist
-================
+**Binary Whitelist**
+--------------------
 .. code-block:: python
 
     import json
