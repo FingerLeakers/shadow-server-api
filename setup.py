@@ -2,7 +2,7 @@
 import os
 import sys
 
-import shadowserver_api
+import shadow_server_api
 
 from setuptools import setup
 
@@ -16,14 +16,14 @@ with open('HISTORY.rst') as f:
     history = f.read()
 
 setup(name='shadow-server-api'
-        ,version=shadowserver_api.__version__
+        ,version=shadow_server_api.__version__
         ,description='Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API'
         ,long_description=readme + '\n\n' + history
         ,url='https://github.com/blacktop/team-cymru-api'
         ,author='blacktop'
         ,author_email='dev@blacktop.io'
-        ,license=shadowserver_api.__license__
+        ,license=shadow_server_api.__license__
         ,test_suite="tests"
-        ,packages=['shadowserver_api']
-        ,package_dir={'shadowserver_api': 'shadowserver_api'}
+        ,packages=['shadow_server_api']
+        ,package_dir={'shadow_server_api': 'shadow_server_api'}
         ,install_requires=["requests >= 2.2.1"])

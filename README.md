@@ -19,7 +19,7 @@ Usage
 #### MD5/SHA1 AV Service
 ```python
 import json
-from shadowserver.shadow_server_api import ShadowServerApi
+from shadow_server_api import ShadowServerApi
 
 ss = ShadowServerApi()
 

@@ -22,7 +22,7 @@ Usage
 .. code-block:: python
 
     import json
-    from shadowserver.shadow_server_api import ShadowServerApi
+    from shadow_server_api import ShadowServerApi
 
     ss = ShadowServerApi()
 
