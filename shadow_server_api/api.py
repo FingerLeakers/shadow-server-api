@@ -1,9 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-__author__ = 'Josh Maine'
-__version__ = '1.0.1'
-__license__ = 'GPLv3'
+"""
+shadow-server-api
+~~~~~~~~~~~~
 
+Shadow Server - Binary Whitelist and MD5/SHA1 AV Service API.
+
+:copyright: (c) 2014 by Josh "blacktop" Maine.
+:license: GPLv3, see LICENSE for more details.
+
+"""
 import ast
 import json
 import re
